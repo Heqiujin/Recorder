@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_color"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_left"
+            android:src="@drawable/turn_left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/title_1"
+            android:text="录音"
+            android:layout_weight="1"
+            android:layout_marginLeft="19dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+<!--        <TextView-->
+<!--            android:id="@+id/title_2"-->
+<!--            android:text="编辑"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#7691C7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:id="@+id/playButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="播放录音" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>
